@@ -16,7 +16,7 @@ def get_score(location: str) -> int:
     return RISK_DATA.get(location, -1)
 
 
-#Function 2: decide safe or high risk 
+#Function 2: Calculate risk for each location 
 def get_safety_status(location: str) -> str:
     """Return 'SAFE', 'HIGH RISK', or 'UNKNOWN' for a city."""
     score = get_score(location)
